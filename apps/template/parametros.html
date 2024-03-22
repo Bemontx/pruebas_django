@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>parametros: {{user}}</h1>
+        <h2>fecha de hoy: {{fechaHoy.day}} / {{fechaHoy.month}} / {{fechaHoy.year}}</h2>
+        {# comentario prueba#}
+        <p>esta ya es con shorcuts ==> render(request, 'index.html', {'name': nombre, 'lastname': nick})</p>
+        <ul>
+            {% for i in listas %}
+            <li>{{i}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% comment %}
+
+    probando comentarios multiples
+    aqui 
+    y aqui
+
+    {% endcomment%}
+</body>
+</html>
